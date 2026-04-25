@@ -167,6 +167,7 @@ function Page() {
         <input value={form.clientIndustry} onChange={(e)=>setForm({...form, clientIndustry:e.target.value})} placeholder="Industry" className="input"/>
         <input value={form.scopeOfWork} onChange={(e)=>setForm({...form, scopeOfWork:e.target.value})} placeholder="Scope" className="input"/>
         <input value={form.size} onChange={(e)=>setForm({...form, size:e.target.value})} placeholder="Size" className="input"/>
+        <input value={form.description} onChange={(e)=>setForm({...form, description:e.target.value})} placeholder="description" className="input"/>
 
         {/* PINNED */}
         <label className="flex gap-2 items-center col-span-2">

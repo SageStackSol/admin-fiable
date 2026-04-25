@@ -12,6 +12,7 @@ function Page() {
   // console.log(form)
   const [form, setForm] = useState({
     title: "",
+    description: "",
     overview: "",
     yearCompleted: "",
     clientName: "",
@@ -189,6 +190,13 @@ function Page() {
                 </p>
                 <input
                   onChange={(e) => setForm({ ...form, size: e.target.value })}
+                  className="bg-[#002f67]/10 w-full px-2 py-1 outline-0 shadow-md border-b border-[#002f67]/16 mb-4"
+                />
+                  <p className="text-[#002f67]/68 font-semibold tracking-widest text-sm">
+                  DESCRIPTION
+                </p>
+                <input
+                  onChange={(e) => setForm({ ...form, description: e.target.value })}
                   className="bg-[#002f67]/10 w-full px-2 py-1 outline-0 shadow-md border-b border-[#002f67]/16 mb-4"
                 />
               </div>
